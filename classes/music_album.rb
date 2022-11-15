@@ -8,4 +8,7 @@ class MusicAlbum < Item
     @name = name
   end
 
+  def can_be_archived?
+    super && @on_spotify
+  end
 end
