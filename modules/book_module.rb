@@ -5,8 +5,8 @@ module BookModule
   end
 
   def add_new_book_details
-    puts '\n-------------------------------'
-    puts 'n\ENTER BOOK DETAILS n\n'
+    puts "\n-------------------------------"
+    puts "\nENTER BOOK DETAILS\n\n"
 
     publisher = capture_input('Input publisher name')
     publish_date = capture_input('Input published date[yyyy/mm/dd]')
@@ -17,13 +17,13 @@ module BookModule
   end
 
   def add_new_label_details
-    puts '\nENTER LABEL DETAILS\n\n'
+    puts "\nENTER LABEL DETAILS\n\n"
 
     title = capture_input('Input label title(Gift, New, e.t.c)')
     color = capture_input('Input label color')
 
     add_label([title, color])
-    puts '\nNew Book and Label Added!'
-    puts '\n-------------------------------'
+    puts "\nNew Book and Label Added!"
+    puts "\n-------------------------------"
   end
 end
