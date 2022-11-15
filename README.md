@@ -1,50 +1,62 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalog of my things
 
-> Description the project.
+> This is the final group project for Ruby to develop a console application implementing the Catalog of things displaying the list of books, musics, movies, and games. It is developed using Ruby.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- IRB 
+- VS Code 
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+No live demo 
+
+## Video presentation 
+
+No live demo 
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
 ### Setup
 
+Copy this link https://github.com/fullstop125/catalog-of-my-things.git.
+Get the directory that you want to clone the repository.
+Open the command prompt in this directory.
+Type
+```
+git clone https://github.com/fullstop125/catalog-of-my-things.git
+```
+
+Go to the repository folder in your command prompt
+```
+cd catalog-of-my-things
+```
+
 ### Install
+Install Ruby using WSL 
+Install Ubuntu after system restart
+Create .rb file to write in the actions
+Add methods to the .rb file  
+Run the commands
+Install the latest Ruby Installer 
+Open the VS Code and install the bundles after creating the GEM file 
+Create .rb files for each class 
 
-### Usage
-
-### Run tests
-
-### Deployment
-
+`
+## to run tests for the application 
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@zakiyosufi](https://github.com/zakiyousufi)
+- LinkedIn: [zakiyousufi](https://linkedin.com/in/zakiyousufi)
 
 👤 **Author2**
 
@@ -71,5 +83,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
