@@ -1,5 +1,6 @@
 class Author
-    attr_accessor :date, :book, :person
+    attr_reader :first_name, :last_name
+    attr_accessor :items
   
     def initialize(first_name, last_name)
       @id = rand(1..1000)
@@ -10,7 +11,7 @@ class Author
   
     def add_item(item)
         item.author = self
-        @items.push(item)
-    end
+        @items.push(item) unless @items.include?(item)
+    end 
   end
   
