@@ -1,8 +1,14 @@
 require_relative './modules/preserver_module'
+require_relative './modules/book_module'
+require_relative './classes/label'
+require_relative './classes/book'
+require 'json'
+require 'json/add/struct'
+
+ItemStructure = Struct.new(:item)
 
 class App
   include PreserverModule
-  attr_reader :books
 
   def initialize
     @books = []
@@ -16,6 +22,24 @@ class App
     load_data
   end
 
+  include BookModule
+
+  def books
+    puts '
+    1. Add book
+    2. List all labels
+    3. List all books'
+    choice = gets.chomp.to_i
+    case choice
+    when 1
+      add_book
+    when 2
+      label_list
+    when 3
+      list_all_books
+    end
+  end
+
   def start_program
     puts 'Welcome to the catalog app'
     until list_of_options
@@ -26,11 +50,6 @@ class App
       end
       option(input)
     end
-  end
-
-  def list_all_books
-    puts 'No available books' if @books.empty?
-    @books.each { |book| puts "label: #{book.label}, published on: #{book.publish_date}" }
   end
 
   def list_all_albums
