@@ -29,7 +29,7 @@ Copy this link https://github.com/fullstop125/catalog-of-my-things.git.
 Get the directory that you want to clone the repository.
 Open the command prompt in this directory.
 
-### setup
+### Setup
 Clone repository
 
 ```
@@ -51,7 +51,7 @@ Run the commands
 bundel install
 ```
 
-## to run project
+## To run project
 
 on the command prompt 
 
@@ -59,7 +59,7 @@ on the command prompt
 ruby main.rb
 ```
 
-## to run tests for the application 
+## To run tests for the application 
 
 on the command prompt 
 
