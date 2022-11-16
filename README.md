@@ -43,6 +43,7 @@ cd catalog-of-my-things
 
 ## Install
 Install Ruby using WSL 
+
 Install Ubuntu after system restart  
 Run the commands
 
