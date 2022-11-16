@@ -28,12 +28,12 @@ class App
   end
 
   def start_program
-    puts 'Welcome to the catalog app'
+    puts "\n    Welcome to the catalog app  :)"
     until list_of_options
       input = gets.chomp
       if input == '0'
         preserve_files
-        puts 'Thank you for using our app'
+        puts "\n    Thank you for using our app  :) \n "
         break
       end
       option(input)
