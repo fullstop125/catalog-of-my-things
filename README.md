@@ -48,7 +48,7 @@ Install Ubuntu after system restart
 Run the commands
 
 ```
-bundel install
+bundle install
 ```
 
 ## To run project
