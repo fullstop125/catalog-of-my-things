@@ -4,7 +4,7 @@
 
 > This is the final group project for Ruby to develop a console application implementing the Catalog of things displaying the list of books, musics, movies, and games. It is developed using Ruby.
 
-### Consule App Screenshot
+### Console App Screenshot
 
 ![](./app_screenshot.JPG)
 
