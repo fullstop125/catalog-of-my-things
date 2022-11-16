@@ -1,17 +1,15 @@
 require_relative './modules/preserver_module'
+require_relative './modules/music_album_module'
+require_relative './classes/music_album'
+require_relative './classes/genre'
 
 class App
   include PreserverModule
-  attr_reader :books
+  include MusicModule
 
   def initialize
-    @books = []
     @albums = []
-    @authors = []
     @genres = []
-    @labels = []
-    @sources = []
-    @games = []
 
     load_data
   end
@@ -21,6 +19,7 @@ class App
     until list_of_options
       input = gets.chomp
       if input == '0'
+        preserve_files
         puts 'Thank you for using our app'
         break
       end
@@ -28,53 +27,56 @@ class App
     end
   end
 
-  def list_all_books
-    puts 'No available books' if @books.empty?
-    @books.each { |book| puts "label: #{book.label}, published on: #{book.publish_date}" }
-  end
-
   def list_all_albums
-    puts 'No available albums' if @albums.empty?
-    @albums.each { |album| puts "genre: #{album.genre}, published on: #{album.publish_date}" }
-  end
+    puts "\nNote: No albums available." if @albums.empty?
 
-  def list_all_games
-    puts 'No available games' if @games.empty?
-    @games.each { |game| puts "genre: #{game.genre}, published on: #{game.publish_date}" }
+    puts "\nALL ALBUMS\n\n"
+    puts "\Genre \t| On spotify? \t| Album Name \t| Publish Date"
+    @albums.each do |album|
+      puts "#{album['genre'].to_s.strip} \t| #{album['on_spotify?']
+    .to_s.strip.rjust(10)} \t| #{album['album_name'].to_s.strip.rjust(10)} \t| #{album['publish_date']
+    .to_s.strip.rjust(10)}"
+      puts "\n---------------------------------------------------"
+    end
   end
 
   def list_all_genres
-    puts 'No available genre' if @genres.empty?
-    @genres.each { |genre| puts "genre: #{genre.name}" }
+    puts "\nNote: No genres available." if @genres.empty?
+    @genres.each do |genre|
+      puts genre['genre_name'].to_s.strip
+      puts "\n----------------------------"
+    end
   end
 
-  def list_all_labels
-    puts 'No available label' if @labels.empty?
-    @labels.each { |label| puts "label: #{label.title}, color: #{label.color}" }
-  end
+  def add_album(album_name, publish_date, genre_name, on_spotify)
+    new_album_instance = MusicAlbum.new(on_spotify, album_name, publish_date)
+    new_genre_instance = Genre.new(genre_name)
+    new_album_instance.genre = new_genre_instance
 
-  def list_all_authors
-    puts 'No available authors' if @authors.empty?
-    @authors.each { |author| puts "author: #{author.first_name} #{author.last_name}" }
+    hash = {
+      'album_name' => new_album_instance.name,
+      'publish_date' => new_album_instance.publish_date,
+      'on_spotify?' => new_album_instance.on_spotify,
+      'genre' => new_genre_instance.name
+    }
+
+    genre_hash = {
+      'genre_name' => new_genre_instance.name
+    }
+
+    @albums << hash
+    @genres << genre_hash
   end
 
   def preserve_files
-    save_data_as_json(@books, 'books')
-    save_data_as_json(@labels, 'labels')
     save_data_as_json(@albums, 'albums')
     save_data_as_json(@genres, 'genres')
-    save_data_as_json(@games, 'games')
-    save_data_as_json(@authors, 'authors')
   end
 
   private
 
   def load_data
-    @books = load_file('books')
-    @labels = load_file('labels')
     @albums = load_file('albums')
     @genres = load_file('genres')
-    @games = load_file('games')
-    @authors = load_file('authors')
   end
 end
