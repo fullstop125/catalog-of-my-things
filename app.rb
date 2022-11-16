@@ -15,7 +15,6 @@ class App
   include GameModule
   attr_reader :books
 
-  
   def initialize
     @books = []
     @albums = []
