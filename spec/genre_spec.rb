@@ -1,7 +1,6 @@
 require_relative '../classes/genre'
 require_relative '../classes/items'
 
-
 describe Genre do
   context 'With valid input' do
     it 'Should add an item' do
