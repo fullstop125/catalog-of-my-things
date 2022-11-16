@@ -6,7 +6,7 @@ CREATE table lable(
     color varchar(255) not null,
 );
 
-CREATE table book (
+CREATE table books (
     id serial generated primary key,
     lable_id int not null,
     publisher varchar(255) not null,
