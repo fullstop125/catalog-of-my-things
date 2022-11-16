@@ -2,8 +2,16 @@ require_relative './modules/preserver_module'
 require_relative './modules/music_album_module'
 require_relative './classes/music_album'
 require_relative './classes/genre'
+require_relative './modules/book_module'
+require_relative './classes/label'
+require_relative './classes/book'
+require 'json'
+require 'json/add/struct'
+
+ItemStructure = Struct.new(:item)
 
 class App
+  include PreserverModule
   include PreserverModule
   include MusicModule
 
@@ -12,6 +20,24 @@ class App
     @genres = []
 
     load_data
+  end
+
+  include BookModule
+
+  def books
+    puts '
+    1. Add book
+    2. List all labels
+    3. List all books'
+    choice = gets.chomp.to_i
+    case choice
+    when 1
+      add_book
+    when 2
+      label_list
+    when 3
+      list_all_books
+    end
   end
 
   def start_program
