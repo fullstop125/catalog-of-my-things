@@ -1,7 +1,6 @@
 require_relative '../classes/author'
 require_relative '../classes/items'
 
-
 describe Author do
   author = Author.new('brian', 'nyachae')
   it 'it should create a new instance of Author' do
