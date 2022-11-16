@@ -14,10 +14,9 @@ def list_of_options
   puts '4- List all Genres'
   puts '5- List all Labels'
   puts '6- List all Authors'
-  puts '7- List all Sources'
-  puts '8- Add a book'
-  puts '9- Add a music album'
-  puts '10- Add a game'
+  puts '7- Add a book'
+  puts '8- Add a music album'
+  puts '9- Add a game'
   puts '0- Exit'
 end
 
@@ -37,13 +36,11 @@ def option(input)
   when '6'
     list_all_authors
   when '7'
-    list_all_sources
+    add_new_book_details
   when '8'
-    books
+    add_new_album_details
   when '9'
-    add_album
-  when '10'
-    add_game
+    add_new_game_details
   end
 end
 # rubocop:enable Metrics/CyclomaticComplexity
