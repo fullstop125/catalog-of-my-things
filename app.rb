@@ -1,15 +1,18 @@
 require_relative './modules/preserver_module'
 require_relative './modules/book_module'
 require_relative './modules/music_album_module'
+require_relative './modules/game_module'
 require_relative './classes/books'
 require_relative './classes/label'
 require_relative './classes/music_album'
 require_relative './classes/genre'
+require_relative './classes/game'
 
 class App
   include PreserverModule
   include BookModule
   include MusicModule
+  include GameModule
   attr_reader :books
 
   def initialize
