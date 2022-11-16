@@ -14,3 +14,18 @@ CREATE table book (
     archived boolean not null,
     foreign key (lable_id) references lable(id)
 );
+
+CREATE table games (
+    id serial generated primary key,
+    item_id int not null,
+    multiplayer boolean not null,
+    last_played_at date not null,
+    foreign key (item_id) references item(id)
+);
+
+CREATE table authors(
+    id serial generated primary key,
+    first_name varchar(255) not null,
+    last_name varchar(255) not null,
+);
+
