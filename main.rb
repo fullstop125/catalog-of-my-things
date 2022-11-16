@@ -39,7 +39,7 @@ def option(input)
   when '7'
     list_all_sources
   when '8'
-    add_book
+    books
   when '9'
     add_album
   when '10'
