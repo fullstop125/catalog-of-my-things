@@ -20,7 +20,7 @@ CREATE table games (
     item_id int not null,
     multiplayer boolean not null,
     last_played_at date not null,
-    foreign key (item_id) references item(id)
+    foreign key (item_id) references items(id)
 );
 
 CREATE table authors(
