@@ -1,5 +1,6 @@
 require_relative '../classes/music_album'
 
+
 describe MusicAlbum do
   album = MusicAlbum.new(true, 'New', '2011/01/01')
   new_album = MusicAlbum.new(false, 'New album', '2020/01/01')
