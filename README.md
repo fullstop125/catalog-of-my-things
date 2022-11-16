@@ -4,6 +4,9 @@
 
 > This is the final group project for Ruby to develop a console application implementing the Catalog of things displaying the list of books, musics, movies, and games. It is developed using Ruby.
 
+### Console App Screenshot
+
+![](./app_screenshot.JPG)
 
 ## Built With
 
@@ -17,17 +20,18 @@ No live demo
 
 ## Video presentation 
 
-No live demo 
+No video yet
 
 
 ## Getting Started
 
-### Setup
-
 Copy this link https://github.com/fullstop125/catalog-of-my-things.git.
 Get the directory that you want to clone the repository.
 Open the command prompt in this directory.
-Type
+
+### Setup
+Clone repository
+
 ```
 git clone https://github.com/fullstop125/catalog-of-my-things.git
 ```
@@ -37,32 +41,49 @@ Go to the repository folder in your command prompt
 cd catalog-of-my-things
 ```
 
-### Install
+## Install
 Install Ruby using WSL 
-Install Ubuntu after system restart
-Create .rb file to write in the actions
-Add methods to the .rb file  
+
+Install Ubuntu after system restart  
 Run the commands
-Install the latest Ruby Installer 
-Open the VS Code and install the bundles after creating the GEM file 
-Create .rb files for each class 
 
-`
-## to run tests for the application 
+```
+bundle install
+```
 
+## To run project
+
+on the command prompt 
+
+```
+ruby main.rb
+```
+
+## To run tests for the application 
+
+on the command prompt 
+
+```
+rspec
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Ahmad Zaki Yousufi**
 
 - GitHub: [@zakiyosufi](https://github.com/zakiyousufi)
 - LinkedIn: [zakiyousufi](https://linkedin.com/in/zakiyousufi)
 
-👤 **Author2**
+👤 **Momanyi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fullstop125](https://github.com/fullstop125)
+- Twitter: [@MosesHassany](https://twitter.com/MosesHassany)
+- LinkedIn: [momanyi-hassan](https://www.linkedin.com/in/momanyi-hassan-32a489180/)
+
+👤 **Juan Diaz**
+
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+- LinkedIn: [juandiaz](www.linkedin.com/in/juandiaz1991)
 
 ## 🤝 Contributing
 
