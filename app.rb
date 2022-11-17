@@ -4,6 +4,7 @@ require_relative './modules/music_album_module'
 require_relative './modules/game_module'
 require_relative './classes/books'
 require_relative './classes/label'
+require_relative './classes/author'
 require_relative './classes/music_album'
 require_relative './classes/genre'
 require_relative './classes/game'
@@ -42,7 +43,7 @@ class App
 
   def list_all_books
     puts 'No available books' if @books.empty?
-    @books.each { |book| puts "#{book['publisher']} #{book['publish_date']} #{book['cover_state']}" }
+    @books.each { |book| puts "#{book['title']} #{book['publisher']} #{book['publish_date']} #{book['cover_state']}" }
   end
 
   def list_all_labels
@@ -100,6 +101,7 @@ class App
   def add_book(new_book)
     new_book_instance = Book.new(*new_book)
     hash = {
+      'title' => new_book_instance.title,
       'publisher' => new_book_instance.publisher,
       'publish_date' => new_book_instance.publish_date,
       'cover_state' => new_book_instance.cover_state
