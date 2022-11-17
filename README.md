@@ -1,56 +1,89 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalog of my things
 
-> Description the project.
+> This is the final group project for Ruby to develop a console application implementing the Catalog of things displaying the list of books, musics, movies, and games. It is developed using Ruby.
 
+### Console App Screenshot
+
+![](./app_screenshot.JPG)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- IRB 
+- VS Code 
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+No live demo 
+
+## Video presentation 
+
+Click [here](https://drive.google.com/file/d/1xAS7NzLmWf4GhX3meFVXAUX_q0kVYJIr/view?usp=share_link) to see video presentation
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+Copy this link https://github.com/fullstop125/catalog-of-my-things.git.
+Get the directory that you want to clone the repository.
+Open the command prompt in this directory.
 
 ### Setup
+Clone repository
 
-### Install
+```
+git clone https://github.com/fullstop125/catalog-of-my-things.git
+```
 
-### Usage
+Go to the repository folder in your command prompt
+```
+cd catalog-of-my-things
+```
 
-### Run tests
+## Install
+Install Ruby using WSL 
 
-### Deployment
+Install Ubuntu after system restart  
+Run the commands
 
+```
+bundle install
+```
 
+## To run project
+
+on the command prompt 
+
+```
+ruby main.rb
+```
+
+## To run tests for the application 
+
+on the command prompt 
+
+```
+rspec
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Ahmad Zaki Yousufi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@zakiyosufi](https://github.com/zakiyousufi)
+- LinkedIn: [zakiyousufi](https://linkedin.com/in/zakiyousufi)
 
-👤 **Author2**
+👤 **Momanyi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fullstop125](https://github.com/fullstop125)
+- Twitter: [@MosesHassany](https://twitter.com/MosesHassany)
+- LinkedIn: [momanyi-hassan](https://www.linkedin.com/in/momanyi-hassan-32a489180/)
+
+👤 **Juan Diaz**
+
+- GitHub: [@juanmanuelbyc](https://github.com/juanmanuelbyc)
+- LinkedIn: [juandiaz](www.linkedin.com/in/juandiaz1991)
 
 ## 🤝 Contributing
 
@@ -70,6 +103,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
